@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background: black;
+}
+
+/* Teks di atas canvas 3D */
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 10;
+  animation: float 4s ease-in-out infinite;
+}
+
+.text-container h1 {
+  font-size: 2.5rem;
+  
+  text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+}
+.text-container h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  text-shadow: 0 0 20px #00ffff;
+}
+
+
+.text-container p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+#hopeText {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: #ffcc00;
+  text-shadow: 0 0 10px #ffcc00;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ffcc00;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0 0 20px #397a8d, 0 0 30px #aba673, 0 0 40px #35381d;
+}
+
+
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #00ffff;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00ffff;
+}
+
+button:hover {
+  background: white;
+}
+
+@keyframes float {
+  0% { transform: translate(-50%, -50%) translateY(0); }
+  50% { transform: translate(-50%, -50%) translateY(-15px); }
+  100% { transform: translate(-50%, -50%) translateY(0); }
+}
+
+
+
